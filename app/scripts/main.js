@@ -6,7 +6,7 @@
 
 (function($) {
 
-	"use strict";
+	'use strict';
 
 	skel.breakpoints({
 		xlarge:	'(max-width: 1680px)',
