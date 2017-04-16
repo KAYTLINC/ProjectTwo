@@ -31,12 +31,12 @@
         <!-- Header -->
           <header id="header" class="alt">
             <h1><a href="index.html">Solid State</a></h1>
-            <nav>
+           <!-- <nav>
               <a href="#menu">Menu</a>
-            </nav>
+            </nav> -->
           </header>
 
-        <!-- Menu -->
+        <!-- Menu 
           <nav id="menu">
             <div class="inner">
               <h2>Menu</h2>
@@ -48,6 +48,7 @@
               <a href="#" class="close">Close</a>
             </div>
           </nav>
+          -->
 
         <!-- Banner -->
           <section id="banner">
@@ -68,7 +69,16 @@
                   <div class="content">
                     <h2 class="major">THE RUSSIAN REVOLUTION OF 1905 BEGINS</h2>
                     <p>A peaceful protest by the Russian people concerning their difficult lifestyle, led by priest Father Gapon, starts the Russian Revolution of 1905.</p>
-                    <a href="#" class="special">Learn more</a>
+
+                    <a href="#" class="special" onclick="on()">Learn more</a>
+
+                    <div id="overlay" onclick="off()">
+                      <div id="text">
+                        <img src="images/1905-rev.jpg" width="300" height="300"/>
+                        <br />
+                      This overlay will be filled with images and text about event</div>
+                    </div>
+
                   </div>
                 </div>
               </section>
@@ -168,6 +178,16 @@
           </section>
 
       </div>
+
+      <script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
