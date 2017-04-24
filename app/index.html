@@ -31,24 +31,8 @@
         <!-- Header -->
           <header id="header" class="alt">
             <h1><a href="index.html">Solid State</a></h1>
-           <!-- <nav>
-              <a href="#menu">Menu</a>
-            </nav> -->
-          </header>
 
-        <!-- Menu 
-          <nav id="menu">
-            <div class="inner">
-              <h2>Menu</h2>
-              <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="generic.html">Nav</a></li>
-                <li><a href="elements.html">Nav</a></li>
-              </ul>
-              <a href="#" class="close">Close</a>
-            </div>
-          </nav>
-          -->
+          </header>
 
         <!-- Banner -->
           <section id="banner">
@@ -90,7 +74,14 @@
                   <div class="content">
                     <h2 class="major">END OF THE 1ST RUSSIAN REVOLUTION</h2>
                     <p>The October Manifesto is signed by Czar Nicholas and promises to grant basic civil liberties such as freedom of speech and religion.</p>
-                    <a href="#" class="special">Learn more</a>
+                    <a href="#" class="special" onclick="on()">Learn more</a>
+
+                    <div id="overlay" onclick="off()">
+                      <div id="text">
+                        <img src="images/1905-rev.jpg" width="300" height="300"/>
+                        <br />
+                      This overlay will be filled with images and text about event</div>
+                    </div>
                   </div>
                 </div>
               </section>
@@ -102,7 +93,14 @@
                   <div class="content">
                     <h2 class="major">RUSSIAN REVOLUTION OF 1917 BEGINS</h2>
                     <p>On Russia's National Women's Day, about 90,000 women march through Petrograd, shouting "Down With the Autocracy!" and "Stop the War!"</p>
-                    <a href="#" class="special">Learn more</a>
+                    <a href="#" class="special" onclick="on()">Learn more</a>
+
+                    <div id="overlay" onclick="off()">
+                      <div id="text">
+                        <img src="images/1905-rev.jpg" width="300" height="300"/>
+                        <br />
+                      This overlay will be filled with images and text about event</div>
+                    </div>
                   </div>
                 </div>
               </section>
@@ -150,9 +148,6 @@
                       <a href="#" class="special">Learn more</a>
                     </article>
                   </section>
-                  <ul class="actions">
-                    <li><a href="#" class="button">Browse All</a></li>
-                  </ul>
                 </div>
               </section>
 
